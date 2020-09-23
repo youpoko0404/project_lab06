@@ -57,7 +57,7 @@ export default {
         .get(
           "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=" +
             this.textSearch +
-            "&type=video&key=AIzaSyB6ZdgM1OVHpyhLyXsrDSWcoSolZyCeoVg"
+            "&type=video&key=AIzaSyBvrNgLHCJ1_zco7KnA21af2_CmAK1g-X8"
         )
         .then((Response) => {
           this.playlist = Response.data.items; //.slice(0, 20);
