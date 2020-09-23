@@ -1,6 +1,7 @@
 <template>
   <body>
-    <b-container class="bv-example-row">
+    <b-container class="bv-example-row" align="center" justify="space-around"
+      ><img src="../assets/img/pic.png" />
       <div class="search">
         <input
           type="text"
