@@ -1,5 +1,5 @@
 <template>
-  <body>
+  <div>
     <b-container class="bv-example-row" align="center" justify="space-around"
       ><img src="../assets/img/pic.png" />
       <div class="search">
@@ -38,7 +38,7 @@
         </template>
       </vs-card>
     </vs-row>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -57,7 +57,7 @@ export default {
         .get(
           "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=" +
             this.textSearch +
-            "&type=video&key=AIzaSyBvrNgLHCJ1_zco7KnA21af2_CmAK1g-X8"
+            "&type=video&key=AIzaSyBpEC6Dg0LMO3oglU8RH_449KcsYMsOpCU"
         )
         .then((Response) => {
           this.playlist = Response.data.items; //.slice(0, 20);
